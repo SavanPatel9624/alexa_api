@@ -102,7 +102,9 @@ const handleDeleteImage = (fileName) => {
     const directoryPath = path.join(__dirname, "public/images");
     //passing directoryPath and callback function
     fs.readdir(directoryPath, function (err, files) {
-        if(files) {
+        console.log("==============files",files);
+        console.log("==============files",fileName);
+        if(files.length > 0) {
             files?.forEach(function (file) {
                 // Do whatever you want to do with the file
                 if (file === fileName) {
