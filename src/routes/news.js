@@ -53,6 +53,10 @@ newsRouter.get('', async(req, res) => {
     return res.send({ error: false, message: "Success" });
 });
 
+newsRouter.get('/:image', async(req, res) => {
+    return res.send({ error: false, message: "Success" });
+});
+
 newsRouter.post('/add_data', async(req, res) => {
     const image = [];
     const multipleArrary = upload.array("file", 20);
@@ -100,7 +104,7 @@ newsRouter.post('/add_data', async(req, res) => {
 
 const handleDeleteImage = (fileName) => {
     const directoryPath = path.join(__dirname, "public/images");
-    //passsing directoryPath and callback function
+    //passing directoryPath and callback function
     fs.readdir(directoryPath, function (err, files) {
         files.forEach(function (file) {
             // Do whatever you want to do with the file
