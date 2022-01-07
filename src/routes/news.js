@@ -108,7 +108,7 @@ const handleDeleteImage = (fileName) => {
             files?.forEach(function (file) {
                 // Do whatever you want to do with the file
                 if (file === fileName) {
-                    fs.unlink(path.join(__dirname, `public/images/${fileName}`), (err) => {
+                    fs.unlink( `public/images/${fileName}`, (err) => {
                         if (err) throw err;
                     });
                 }
