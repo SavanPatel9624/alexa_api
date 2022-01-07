@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 const port = process.env.PORT || 9000
+const cors = require('cors');
 
 // Static Files
 app.use(express.static('public'))
@@ -14,6 +15,9 @@ app.use('/js', express.static(__dirname + 'public/js'))
 // Templating Engine
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
+
+app.use(cors());
+app.options('*', cors());
 
 app.use(bodyParser.urlencoded({ extended : true }))
 
