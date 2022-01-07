@@ -99,12 +99,12 @@ newsRouter.post('/add_data', async(req, res) => {
 })
 
 const handleDeleteImage = (fileName) => {
-    const directoryPath = path.join(__dirname, "public/images");
+    const directoryPath = "public/images";
     //passing directoryPath and callback function
     fs.readdir(directoryPath, function (err, files) {
         console.log("==============files",files);
         console.log("==============files",fileName);
-        if(files.length > 0) {
+        if(files && files.length > 0) {
             files?.forEach(function (file) {
                 // Do whatever you want to do with the file
                 if (file === fileName) {
