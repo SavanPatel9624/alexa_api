@@ -11,7 +11,7 @@ const filter = require("lodash/filter");
 const size = require("lodash/size");
 const replace = require("lodash/replace");
 
-const apiUrl = 'http://localhost:4000';
+const apiUrl = 'https://alexa-api-2.herokuapp.com';
 
 const dbcon = mysql.createConnection({
     port: 3306,
