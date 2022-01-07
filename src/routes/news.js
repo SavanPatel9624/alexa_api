@@ -14,19 +14,19 @@ const replace = require("lodash/replace");
 const apiUrl = 'http://localhost:4000';
 
 const dbcon = mysql.createConnection({
-    port: 8889,
+    port: 3306,
     connectionLimit: 1000,
     // host: "bk3vagjjhjnbhrco2e6c-mysql.services.clever-cloud.com",
     // user: "udowjyundk2bwm90",
     // password: "lPlJcewPxYNEGAouj9y2",
     // database: "bk3vagjjhjnbhrco2e6c",
-    host:'localhost',
+    host:'sql6.freemysqlhosting.net',
     // user:'u274955297_root',
     // password:'7!K#LqMCKh',
-    password:'root',
-    user:'root',
+    password:'nE8fZABJXe',
+    user:'sql6463918',
     // database:'u274955297_alexa_ceramic',
-    database:'alexa_ceramic',
+    database:'sql6463918',
     charset: "utf8mb4",
     multipleStatements: true,
 });
