@@ -53,10 +53,6 @@ newsRouter.get('', async(req, res) => {
     return res.send({ error: false, message: "Success" });
 });
 
-newsRouter.get('/:image', async(req, res) => {
-    return res.send({ error: false, message: "Success" });
-});
-
 newsRouter.post('/add_data', async(req, res) => {
     const image = [];
     const multipleArrary = upload.array("file", 20);
