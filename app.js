@@ -6,7 +6,7 @@ const port = process.env.PORT || 9000
 const cors = require('cors');
 
 // Static Files
-app.use(express.static('public'))
+app.use(express.static(__dirname + "/public/"))
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/images', express.static(__dirname + 'public/images'))
