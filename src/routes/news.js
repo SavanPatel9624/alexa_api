@@ -21,15 +21,14 @@ const dbcon = mysql.createConnection({
     // password: "lPlJcewPxYNEGAouj9y2",
     // database: "bk3vagjjhjnbhrco2e6c",
     host:'localhost',
-    user:'root',
+    // user:'u274955297_root',
+    // password:'7!K#LqMCKh',
     password:'root',
+    user:'root',
+    // database:'u274955297_alexa_ceramic',
     database:'alexa_ceramic',
     charset: "utf8mb4",
     multipleStatements: true,
-    // options: {
-    //   trustedconnection: true,
-    //   enablearithAort: true,
-    // },
 });
 
 dbcon.connect();
