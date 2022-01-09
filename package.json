@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "node app.js",
-    "heroku-postbuild": "ng build"
   },
   "author": "",
   "license": "ISC",
