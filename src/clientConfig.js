@@ -1,4 +1,4 @@
-const API_URL ='http://localhost:9000';
+const API_URL ='https://alexa-api-6vlkl.ondigitalocean.app';
 
 
 module.exports = API_URL;
