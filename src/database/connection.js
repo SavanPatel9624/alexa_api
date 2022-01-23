@@ -3,10 +3,10 @@ const mysql = require("mysql");
  const dbcon = mysql.createConnection({
      port: 3306,
      connectionLimit: 1000,
-     host:'sql6.freemysqlhosting.net',
-     password:'nE8fZABJXe',
-     user:'sql6463918',
-     database:'sql6463918',
+     host:'db4free.net',
+     password:'Patel@9624',
+     user:'savanpatel',
+     database:'alexaceramic',
     charset: "utf8mb4",
     multipleStatements: true,
 });
