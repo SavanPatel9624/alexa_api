@@ -23,12 +23,19 @@ const allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain);
 
-app.use(bodyParser.urlencoded({ extended : true }))
+app.use(bodyParser.urlencoded({ extended : true }));
 
 // Routes
-const newsRouter = require('./src/routes/news')
+const newsRouter = require('./src/routes/news');
+const deleteRouter = require('./src/routes/delete');
+const postRouter = require('./src/routes/post');
+const getRouter = require('./src/routes/get');
+const mysql = require("mysql");
 
-app.use('/', newsRouter)
+app.use('/', newsRouter);
+app.use('/', deleteRouter);
+app.use('/', postRouter);
+app.use('/', getRouter);
 
 // Listen on port 5000
-app.listen(port, () => console.log(`Listening on port ${port}`))
+app.listen(port, () => console.log(`Listening on port ${port}`));
